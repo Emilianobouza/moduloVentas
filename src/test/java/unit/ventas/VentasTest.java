@@ -53,7 +53,7 @@ public class VentasTest {
     @Test
     void totalNoPuedeSerNegativo(){
         Venta venta = new Venta();
-        assertTrue(venta.setTotal(-0.1));
+        assertFalse(venta.setTotal(-0.1));
     }
 //
 //    @Test
